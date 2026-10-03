@@ -1,0 +1,51 @@
+consulta_id,grupo,pos,film_id,titulo,ano,generos,similaridade,generos_em_comum,proxy
+0,A mais votados,1,350,Dev.D,2009,"Drama, Romance",0.1745,Drama,1
+0,A mais votados,2,68,Oldeuboi,2003,"Action, Drama, Mystery",0.1248,Drama,1
+0,A mais votados,3,179,The Great Escape,1963,"Adventure, Drama, History",0.1186,Drama,1
+0,A mais votados,4,253,Fa yeung nin wah,2000,"Drama, Romance",0.1071,Drama,1
+0,A mais votados,5,197,Koe no katachi,2016,"Animation, Drama, Family",0.1064,Drama,1
+2,A mais votados,1,155,Batman Begins,2005,"Action, Adventure",0.2045,Action,1
+2,A mais votados,2,63,The Dark Knight Rises,2012,"Action, Adventure",0.1776,Action,1
+2,A mais votados,3,33,Joker,2019,"Crime, Drama, Thriller",0.0985,"Crime, Drama",1
+2,A mais votados,4,241,Kill Bill: Vol. 1,2003,"Action, Crime, Drama",0.0927,"Action, Crime, Drama",1
+2,A mais votados,5,291,La battaglia di Algeri,1966,"Drama, War",0.0894,Drama,1
+8,A mais votados,1,708,À bout de souffle,1960,"Crime, Drama",0.1091,,0
+8,A mais votados,2,412,Kagemusha,1980,"Drama, History, War",0.1047,,0
+8,A mais votados,3,238,Munna Bhai M.B.B.S.,2003,"Comedy, Drama, Musical",0.1028,,0
+8,A mais votados,4,353,Nefes: Vatan Sagolsun,2009,"Action, Drama, Thriller",0.0993,Action,1
+8,A mais votados,5,855,The Odd Couple,1968,Comedy,0.0967,,0
+26,B sorteio,1,616,The Boy in the Striped Pyjamas,2008,"Drama, History, War",0.1917,Drama,1
+26,B sorteio,2,841,Ordinary People,1980,Drama,0.1114,Drama,1
+26,B sorteio,3,88,Jagten,2012,Drama,0.1015,Drama,1
+26,B sorteio,4,44,Terminator 2: Judgment Day,1991,"Action, Sci-Fi",0.0959,,0
+26,B sorteio,5,689,Kramer vs. Kramer,1979,Drama,0.0915,Drama,1
+850,B sorteio,1,144,Warrior,2011,"Action, Drama, Sport",0.2208,"Action, Drama",1
+850,B sorteio,2,924,Huo Yuan Jia,2006,"Action, Biography, Drama",0.1568,"Action, Drama",1
+850,B sorteio,3,602,Ang-ma-reul bo-at-da,2010,"Action, Crime, Drama",0.1354,"Action, Crime, Drama",1
+850,B sorteio,4,999,The 39 Steps,1935,"Crime, Mystery, Thriller",0.1353,Crime,1
+850,B sorteio,5,651,Shrek,2001,"Animation, Adventure, Comedy",0.1146,,0
+178,B sorteio,1,168,Indiana Jones and the Last Crusade,1989,"Action, Adventure",0.1002,Adventure,1
+178,B sorteio,2,990,Giù la testa,1971,"Drama, War, Western",0.0931,,0
+178,B sorteio,3,858,A Man for All Seasons,1966,"Biography, Drama, History",0.0903,,0
+178,B sorteio,4,256,Underground,1995,"Comedy, Drama, War",0.0771,Comedy,1
+178,B sorteio,5,946,Y tu mamá también,2001,Drama,0.077,,0
+12,C falha proxy,1,582,Rogue One,2016,"Action, Adventure, Sci-Fi",0.1751,,0
+12,C falha proxy,2,510,Cowboy Bebop: Tengoku no tobira,2001,"Animation, Action, Crime",0.1298,,0
+12,C falha proxy,3,861,Goldfinger,1964,"Action, Adventure, Thriller",0.1268,,0
+12,C falha proxy,4,547,Charade,1963,"Comedy, Mystery, Romance",0.121,,0
+12,C falha proxy,5,193,The Gold Rush,1925,"Adventure, Comedy, Drama",0.1152,,0
+14,C falha proxy,1,603,The Girl with the Dragon Tattoo,2011,"Crime, Drama, Mystery",0.1419,,0
+14,C falha proxy,2,48,Once Upon a Time in the West,1968,Western,0.1198,,0
+14,C falha proxy,3,947,Harry Potter and the Sorcerer's Stone,2001,"Adventure, Family, Fantasy",0.113,,0
+14,C falha proxy,4,261,Chung Hing sam lam,1994,"Comedy, Crime, Drama",0.1075,,0
+14,C falha proxy,5,826,Barton Fink,1991,"Comedy, Drama, Thriller",0.104,,0
+48,C falha proxy,1,105,Idi i smotri,1985,"Drama, Thriller, War",0.1795,,0
+48,C falha proxy,2,177,Sholay,1975,"Action, Adventure, Comedy",0.1385,,0
+48,C falha proxy,3,29,Star Wars,1977,"Action, Adventure, Fantasy",0.1216,,0
+48,C falha proxy,4,14,The Matrix,1999,"Action, Sci-Fi",0.1198,,0
+48,C falha proxy,5,737,Captain America: The Winter Soldier,2014,"Action, Adventure, Sci-Fi",0.1077,,0
+87,D título repetido,1,136,Drishyam,2015,"Crime, Drama, Mystery",0.2311,"Crime, Drama",1
+87,D título repetido,2,891,Incredibles 2,2018,"Animation, Action, Adventure",0.1949,,0
+87,D título repetido,3,841,Ordinary People,1980,Drama,0.1478,Drama,1
+87,D título repetido,4,863,Cape Fear,1962,"Drama, Thriller",0.147,"Drama, Thriller",1
+87,D título repetido,5,378,The Incredibles,2004,"Animation, Action, Adventure",0.1442,,0

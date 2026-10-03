@@ -1,0 +1,64 @@
+{
+  "experimento": "EXP-01",
+  "data_execucao": "2026-10-02",
+  "protocolo": {
+    "k": 5,
+    "consultas": 1000,
+    "candidatos_por_consulta": 999,
+    "relevancia_proxy": "compartilha ao menos um gênero com a consulta",
+    "modelo": "TfidfVectorizer(stop_words='english') sobre Overview + cosseno",
+    "genero_no_modelo": false,
+    "semente_aleatorio": 42,
+    "sementes_estabilidade": "0 a 19"
+  },
+  "metricas": [
+    {
+      "metodo": "tfidf_sinopse",
+      "k": 5,
+      "n_consultas": 1000,
+      "precisao_proxy_media": 0.7688,
+      "erro_padrao": 0.008,
+      "jaccard_medio": 0.2993,
+      "filmes_distintos_recomendados": 952,
+      "cobertura_catalogo": 0.952
+    },
+    {
+      "metodo": "popularidade",
+      "k": 5,
+      "n_consultas": 1000,
+      "precisao_proxy_media": 0.6822,
+      "erro_padrao": 0.0091,
+      "jaccard_medio": 0.2705,
+      "filmes_distintos_recomendados": 6,
+      "cobertura_catalogo": 0.006
+    },
+    {
+      "metodo": "aleatorio",
+      "k": 5,
+      "n_consultas": 1000,
+      "precisao_proxy_media": 0.6612,
+      "erro_padrao": 0.009,
+      "jaccard_medio": 0.2136,
+      "filmes_distintos_recomendados": 995,
+      "cobertura_catalogo": 0.995
+    }
+  ],
+  "taxa_base_precisao_proxy": 0.6616,
+  "aleatorio_20_sementes": {
+    "media": 0.662,
+    "desvio": 0.0038,
+    "min": 0.6536,
+    "max": 0.6696
+  },
+  "vocabulario_tfidf": 5426,
+  "tempo_modelo_s": 0.041,
+  "ambiente": {
+    "python": "3.13.15",
+    "sistema": "Linux-6.18.44-fc-v51-x86_64-with-glibc2.39",
+    "pandas": "3.0.6",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "aviso": "Métricas proxy (sobreposição de gêneros); não medem relevância para usuários."
+}

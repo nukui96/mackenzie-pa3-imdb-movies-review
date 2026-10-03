@@ -1,0 +1,4 @@
+metodo,k,n_consultas,precisao_proxy_media,erro_padrao,jaccard_medio,filmes_distintos_recomendados,cobertura_catalogo
+tfidf_sinopse,5,1000,0.7688,0.008,0.2993,952,0.952
+popularidade,5,1000,0.6822,0.0091,0.2705,6,0.006
+aleatorio,5,1000,0.6612,0.009,0.2136,995,0.995

@@ -1,0 +1,20 @@
+{
+  "fonte": "data/raw/imdb_top_1000.csv (Kaggle, Harshit Shankhdhar)",
+  "linhas_bruto": 1000,
+  "colunas_bruto": 16,
+  "linhas_processado": 1000,
+  "colunas_processado": 18,
+  "titulos_distintos": 999,
+  "linhas_duplicadas_exatas": 0,
+  "ausentes_bruto": {
+    "Certificate": 101,
+    "Meta_score": 157,
+    "Gross": 169
+  },
+  "released_year_nao_numerico": 1,
+  "generos_distintos": 21,
+  "overview_palavras_mediana": 24.0,
+  "overview_palavras_media": 25.0,
+  "overview_palavras_min": 8,
+  "overview_palavras_max": 56
+}

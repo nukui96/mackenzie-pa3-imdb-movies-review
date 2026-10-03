@@ -1,0 +1,11 @@
+verificação,bruto,processado,confere
+Linhas,1000,1000,True
+"Colunas (esperado: 16 - 3 [Poster_Link, Runtime, Gross] + 5 [film_id, Runtime_min, Gross_usd, Overview_chars, Overview_words])",18,18,True
+Títulos distintos,999,999,True
+Ausentes em Certificate,101,101,True
+Ausentes em Meta_score,157,157,True
+Ausentes em Gross (bruto) / Gross_usd (processado),169,169,True
+Ausentes em Released_Year (bruto: não numéricos),1,1,True
+Ausentes em Overview,0,0,True
+Zeros criados em Gross_usd,0,0,True
+Soma de No_of_Votes,273692911,273692911,True
