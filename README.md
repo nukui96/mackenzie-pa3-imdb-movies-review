@@ -4,7 +4,7 @@ Projeto desenvolvido por Kayo Oliveira Nukui (TIA 10356420), no curso de Tecnolo
 
 ## Objetivo
 
-Criar uma primeira versão de um recomendador que, a partir de um filme escolhido, mostre cinco títulos com sinopses semelhantes. Os arquivos deste repositório correspondem às etapas 1 e 2.
+Criar e avaliar um recomendador reproduzível que, a partir de um filme escolhido no catálogo, mostre cinco títulos com sinopses semelhantes. Os arquivos deste repositório correspondem às etapas 1, 2 e 3.
 
 ## Base
 
@@ -15,10 +15,10 @@ Criar uma primeira versão de um recomendador que, a partir de um filme escolhid
 | Caminho | Conteúdo |
 |---|---|
 | `entregas/` | Relatórios em PDF, organizados por etapa. |
-| `notebooks/` | Notebooks 01 (dados e qualidade), 02 (exploração e preparação) e 03 (prova de conceito). Ver [`notebooks/README.md`](notebooks/README.md). |
+| `notebooks/` | Notebooks 01 (dados e qualidade), 02 (exploração e preparação) e 03 (prova de conceito e avaliação). Ver [`notebooks/README.md`](notebooks/README.md). |
 | `src/` | Funções importadas pelos notebooks: inspeção, preparação e recomendação. Ver [`src/README.md`](src/README.md). |
 | `data/raw/`, `data/processed/` | CSV bruto e catálogo preparado gerado pelo notebook 02. |
-| `reports/figures/`, `reports/metrics/` | Figuras e métricas geradas pelos notebooks 02 e 03. |
+| `reports/figures/`, `reports/metrics/` | Figuras e métricas geradas pelos notebooks 02 e 03 e fluxograma da metodologia. |
 | `docs/` | Ambiente de execução e regras de tratamento da base. |
 
 ## Execução
@@ -31,7 +31,7 @@ python -m venv .venv
 
 Após ativá-lo, execute `python -m pip install -r requirements.txt`. Abra os notebooks em um ambiente Jupyter e use **Restart & Run All** na ordem 01, 02, 03; o 03 lê o arquivo gerado pelo 02. As versões das bibliotecas e a situação da execução estão em [`docs/ambiente.md`](docs/ambiente.md).
 
-## Método e resultado preliminar
+## Método e resultado
 
 O modelo usa TF-IDF para representar as palavras das sinopses (`Overview`) e similaridade do cosseno para ordenar os filmes. O gênero não entra no cálculo das recomendações. Comparamos a lista de cinco títulos com duas referências simples: os filmes mais votados e uma lista sorteada. Como a base não contém opiniões individuais sobre essas sugestões, contamos quantos filmes recomendados compartilham algum gênero com o filme escolhido. Essa medida é apenas um **indicador indireto**, chamado de proxy. Os números estão em [`reports/metrics/metricas_poc.csv`](reports/metrics/metricas_poc.csv).
 
