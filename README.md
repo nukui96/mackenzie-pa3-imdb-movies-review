@@ -4,7 +4,7 @@ Projeto desenvolvido por Kayo Oliveira Nukui (TIA 10356420), no curso de Tecnolo
 
 ## Objetivo
 
-Criar e avaliar um recomendador reproduzível que, a partir de um filme escolhido no catálogo, mostre cinco títulos com sinopses semelhantes. Os arquivos deste repositório correspondem às etapas 1, 2 e 3.
+Criar e avaliar um recomendador reproduzível que, a partir de um filme escolhido no catálogo, mostre cinco títulos com sinopses semelhantes. Os arquivos deste repositório correspondem às etapas 1, 2, 3 e 4.
 
 ## Base
 
@@ -33,7 +33,7 @@ Após ativá-lo, execute `python -m pip install -r requirements.txt`. Abra os no
 
 ## Método e resultado
 
-O modelo usa TF-IDF para representar as palavras das sinopses (`Overview`) e similaridade do cosseno para ordenar os filmes. O gênero não entra no cálculo das recomendações. Comparamos a lista de cinco títulos com duas referências simples: os filmes mais votados e uma lista sorteada. Como a base não contém opiniões individuais sobre essas sugestões, contamos quantos filmes recomendados compartilham algum gênero com o filme escolhido. Essa medida é apenas um **indicador indireto**, chamado de proxy. Os números estão em [`reports/metrics/metricas_poc.csv`](reports/metrics/metricas_poc.csv).
+O modelo usa TF-IDF para representar as palavras das sinopses (`Overview`) e similaridade do cosseno para ordenar os filmes. O gênero não entra no cálculo das recomendações. Comparamos a lista de cinco títulos com duas referências simples: os filmes mais votados e uma lista sorteada. Como a base não contém opiniões individuais sobre essas sugestões, a avaliação offline examina a coincidência de gêneros com o filme consultado (indicador indireto, chamado de proxy), a proximidade média de cosseno com a consulta, a diversidade de gêneros dentro do Top 5 (1 - Jaccard entre os dez pares recomendados) e a cobertura agregada do catálogo. Os números estão em [`reports/metrics/metricas_poc.csv`](reports/metrics/metricas_poc.csv).
 
 ## Limites
 

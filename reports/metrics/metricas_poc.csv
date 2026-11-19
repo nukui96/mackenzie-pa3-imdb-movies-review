@@ -1,4 +1,4 @@
-metodo,k,n_consultas,precisao_proxy_media,erro_padrao,jaccard_medio,filmes_distintos_recomendados,cobertura_catalogo
-tfidf_sinopse,5,1000,0.7688,0.008,0.2993,952,0.952
-popularidade,5,1000,0.6822,0.0091,0.2705,6,0.006
-aleatorio,5,1000,0.6612,0.009,0.2136,995,0.995
+metodo,k,n_consultas,precisao_proxy_media,erro_padrao,jaccard_medio,proximidade_cosseno_media,proximidade_cosseno_ep,diversidade_generos_media,diversidade_generos_ep,filmes_distintos_recomendados,cobertura_catalogo
+tfidf_sinopse,5,1000,0.7688,0.008,0.2993,0.1299,0.001,0.7359,0.0035,952,0.952
+popularidade,5,1000,0.6822,0.0091,0.2705,0.004,0.0003,0.6467,0.0002,6,0.006
+aleatorio,5,1000,0.6612,0.009,0.2136,0.0059,0.0003,0.783,0.003,995,0.995

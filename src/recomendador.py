@@ -1,6 +1,6 @@
 """Prova de conceito: recomendação por conteúdo (TF-IDF sobre Overview) e linhas de base.
 
-O gênero NÃO entra no modelo. É usado somente na avaliação proxy.
+O gênero NÃO entra no modelo. É usado somente na avaliação proxy e na diversidade intra-lista.
 """
 
 import numpy as np
@@ -49,6 +49,21 @@ def metricas_proxy(generos, i, recs):
     comp = [len(q & generos[j]) > 0 for j in recs]
     jac = [len(q & generos[j]) / len(q | generos[j]) for j in recs]
     return float(np.mean(comp)), float(np.mean(jac))
+
+
+def proximidade_cosseno(sim, i, recs):
+    """Média das k pontuações de similaridade de cosseno entre a consulta i e suas sugestões."""
+    return float(np.mean([sim[i, j] for j in recs]))
+
+
+def diversidade_generos(generos, recs):
+    """Média de (1 - Jaccard) dos conjuntos de gêneros entre os k*(k-1)/2 pares de sugestões."""
+    pares = [
+        1.0 - (len(generos[a] & generos[b]) / len(generos[a] | generos[b]))
+        for idx, a in enumerate(recs)
+        for b in recs[idx + 1 :]
+    ]
+    return float(np.mean(pares))
 
 
 ## RA: 10356420 - KAYO OLIVEIRA NUKUI ##

@@ -4,7 +4,7 @@
 |---|---|
 | `inspect_data.py` | Inspeção inicial do CSV bruto: exige colunas, conta registros, células vazias e duplicatas exatas. Não altera dados. |
 | `preparo.py` | `preparar_catalogo`: regras R1 a R7 de preparação (ver `../docs/tratamento_base_dados.md`). Devolve um novo DataFrame; o bruto não é modificado. |
-| `recomendador.py` | TF-IDF sobre a sinopse, similaridade de cosseno, rankings Top 5 (conteúdo, popularidade, aleatório) e métricas proxy por gênero. O gênero não entra no modelo, só na avaliação. |
+| `recomendador.py` | TF-IDF sobre a sinopse, similaridade de cosseno, rankings Top 5 (conteúdo, popularidade, aleatório), métricas proxy por gênero, proximidade média de cosseno com a consulta e diversidade de gêneros dentro do Top 5. O gênero não entra no modelo, só na avaliação. |
 
 Uso de `inspect_data.py`, da raiz do projeto:
 

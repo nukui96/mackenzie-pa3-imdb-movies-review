@@ -1,10 +1,13 @@
 {
-  "data_execucao": "2026-10-29",
+  "data_execucao": "2026-11-15",
   "protocolo": {
     "k": 5,
     "consultas": 1000,
     "candidatos_por_consulta": 999,
     "relevancia_proxy": "compartilha ao menos um gênero com a consulta",
+    "proximidade_cosseno": "média das K=5 pontuações de cosseno entre a consulta e as sugestões",
+    "diversidade_intralista": "média de (1 - Jaccard de gêneros) entre os K*(K-1)/2 = 10 pares de sugestões do Top 5",
+    "cobertura_entre_listas": "proporção dos 1000 filmes recomendados ao menos uma vez nas 1000 listas Top 5",
     "modelo": "TfidfVectorizer(stop_words='english') sobre Overview + cosseno",
     "genero_no_modelo": false,
     "semente_aleatorio": 42,
@@ -18,6 +21,10 @@
       "precisao_proxy_media": 0.7688,
       "erro_padrao": 0.008,
       "jaccard_medio": 0.2993,
+      "proximidade_cosseno_media": 0.1299,
+      "proximidade_cosseno_ep": 0.001,
+      "diversidade_generos_media": 0.7359,
+      "diversidade_generos_ep": 0.0035,
       "filmes_distintos_recomendados": 952,
       "cobertura_catalogo": 0.952
     },
@@ -28,6 +35,10 @@
       "precisao_proxy_media": 0.6822,
       "erro_padrao": 0.0091,
       "jaccard_medio": 0.2705,
+      "proximidade_cosseno_media": 0.004,
+      "proximidade_cosseno_ep": 0.0003,
+      "diversidade_generos_media": 0.6467,
+      "diversidade_generos_ep": 0.0002,
       "filmes_distintos_recomendados": 6,
       "cobertura_catalogo": 0.006
     },
@@ -38,19 +49,30 @@
       "precisao_proxy_media": 0.6612,
       "erro_padrao": 0.009,
       "jaccard_medio": 0.2136,
+      "proximidade_cosseno_media": 0.0059,
+      "proximidade_cosseno_ep": 0.0003,
+      "diversidade_generos_media": 0.783,
+      "diversidade_generos_ep": 0.003,
       "filmes_distintos_recomendados": 995,
       "cobertura_catalogo": 0.995
     }
   ],
   "taxa_base_precisao_proxy": 0.6616,
+  "taxa_base_diversidade_generos": 0.7835,
   "aleatorio_20_sementes": {
     "media": 0.662,
     "desvio": 0.0038,
     "min": 0.6536,
     "max": 0.6696
   },
+  "aleatorio_20_sementes_diversidade": {
+    "media": 0.7836,
+    "desvio": 0.0026,
+    "min": 0.7785,
+    "max": 0.7885
+  },
   "vocabulario_tfidf": 5426,
-  "tempo_modelo_s": 0.039,
+  "tempo_modelo_s": 0.033,
   "ambiente": {
     "python": "3.14.7",
     "sistema": "Windows-11-10.0.26300-SP0",
@@ -59,5 +81,5 @@
     "scikit-learn": "1.9.1",
     "matplotlib": "3.11.2"
   },
-  "aviso": "Métricas proxy (sobreposição de gêneros); não medem relevância para usuários."
+  "aviso": "Métricas proxy, proximidade léxica e diversidade de gêneros não medem relevância ou satisfação de usuários reais."
 }
