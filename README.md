@@ -56,3 +56,9 @@ Os resultados estão em [`reports/metrics/metricas_poc.csv`](reports/metrics/met
 - A base contém apenas os 1.000 títulos mais bem avaliados do IMDb, com sinopses curtas em inglês.
 - Esta prova de conceito não inclui ajuste de parâmetros, avaliação com usuários ou aplicação junto à comunidade.
 - A página do dataset no Kaggle indica CC0 1.0. Essa indicação do mantenedor não esclarece, por si só, os direitos sobre dados originalmente atribuídos ao IMDb.
+
+## Materiais da entrega
+
+- [Vídeo da apresentação](https://youtu.be/VbYEDENChWw)
+- [Formulário de avaliação](https://docs.google.com/forms/d/e/1FAIpQLSd0SaJ6Rn9BO-VJUbSR6kEYH89Sgi1MyyM6JczUZjotXqfKIg/viewform)
+- [PDF da entrega](entregas/etapa_04/%5BPA3%5D%20Etapa%204%20-%20Recomendacao%20de%20Filmes%20por%20Conteudo.pdf)
