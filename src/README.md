@@ -12,4 +12,4 @@ Uso de `inspect_data.py`, da raiz do projeto:
 python src/inspect_data.py data/raw/imdb_top_1000.csv --required Series_Title Overview Genre
 ```
 
-`preparo.py` e `recomendador.py` são importados pelos notebooks 02 e 03. Nenhum módulo mede a validade das recomendações para usuários.
+`preparo.py` e `recomendador.py` são importados pelos notebooks 02 e 03; `app.py` também importa `recomendador.py`. Nenhum módulo mede a validade das recomendações para usuários.

@@ -1,7 +1,3 @@
-# Versões efetivamente usadas na execução de 2026-10-02 (container Linux, Python 3.13.15).
-# O .venv local do autor (Windows, Python 3.14.7) tem as mesmas versões de pandas, numpy,
-# matplotlib, nbclient e nbformat (scikit-learn 1.9.1 conforme registro do .venv); ipykernel local: 7.3.0.
-# JupyterLab (local: 4.6.4) é só interface de edição e não foi usado na execução automática.
 pandas==3.0.6
 numpy==2.5.3
 scikit-learn==1.9.1
